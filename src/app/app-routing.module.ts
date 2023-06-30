@@ -19,7 +19,9 @@ const routes: Routes = [
             { path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule), canActivate:[authenticationGuard()]},
             { path: 'contacts', loadChildren: () => import('./contacts/contacts.module').then(m => m.ContactsModule), canActivate:[authenticationGuard()]},
             { path: 'messages', loadChildren: () => import('./messages/messages.module').then(m => m.MessagesModule), canActivate:[authenticationGuard()]},
-            { path: 'recipients',component: RecipientsComponent, canActivate:[authenticationGuard()]}
+            { path: 'recipients',component: RecipientsComponent, canActivate:[authenticationGuard()]},
+            { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule), canActivate:[authenticationGuard()]},
+
         ]
     },
     { path: 'auth', data: { breadcrumb: 'Auth' }, loadChildren: () => import('./demo/components/auth/auth.module').then(m => m.AuthModule) },
