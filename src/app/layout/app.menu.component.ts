@@ -523,49 +523,63 @@ export class AppMenuComponent implements OnInit {
                     }
                 ]
             },
+            // {
+            //     label: 'Messages',
+            //     icon: 'pi pi-fw pi-at',
+            //     items: [
+            //         {
+            //             label: 'Messages',
+            //             icon: 'pi pi-fw pi-at',
+            //             routerLink: ['/messages']
+            //         },
+            //         {
+            //             label: 'Recipients',
+            //             icon: 'pi pi-fw pi-at',
+            //             routerLink: ['/recipients']
+            //         }
+            //     ]
+            // },
+            // {
+            //     label: 'Orders',
+            //     icon: 'pi pi-fw pi-sync',
+            //     items: [
+            //         {
+            //             label: 'Orders',
+            //             icon: 'pi pi-fw pi-sync',
+            //         }
+            //     ]
+            // },
+            // {
+            //     label: 'Tasks',
+            //     icon: 'pi pi-fw pi-check-square',
+            //     items: [
+            //         {
+            //             label: 'Tasks',
+            //             icon: 'pi pi-fw pi-check-square',
+            //         }
+            //     ]
+            // },
+            // {
+            //     label: 'Accounting',
+            //     icon: 'pi pi-fw pi-book',
+            //     items: [
+            //         {
+            //             label: 'Sales',
+            //             icon: 'pi pi-fw pi-align-left',
+            //         }
+            //     ]
+            // },
             {
-                label: 'Messages',
-                icon: 'pi pi-fw pi-at',
-                items: [
-                    {
-                        label: 'Messages',
-                        icon: 'pi pi-fw pi-at',
-                        routerLink: ['/messages']
-                    },
-                    {
-                        label: 'Recipients',
-                        icon: 'pi pi-fw pi-at',
-                        routerLink: ['/recipients']
-                    }
-                ]
-            },
-            {
-                label: 'Orders',
-                icon: 'pi pi-fw pi-sync',
-                items: [
-                    {
-                        label: 'Orders',
-                        icon: 'pi pi-fw pi-sync',
-                    }
-                ]
-            },
-            {
-                label: 'Tasks',
-                icon: 'pi pi-fw pi-check-square',
-                items: [
-                    {
-                        label: 'Tasks',
-                        icon: 'pi pi-fw pi-check-square',
-                    }
-                ]
-            },
-            {
-                label: 'Accounting',
-                icon: 'pi pi-fw pi-book',
+                label: 'Accounts',
+                icon: 'pi pi-fw pi-building',
                 items: [
                     {
                         label: 'Sales',
-                        icon: 'pi pi-fw pi-align-left',
+                        icon: 'pi pi-fw pi-user',
+                    },
+                    {
+                        label: 'Purcheses',
+                        icon: 'pi pi-fw pi-user',
                     }
                 ]
             },
@@ -575,6 +589,18 @@ export class AppMenuComponent implements OnInit {
                 items: [
                     {
                         label: 'Items',
+                        icon: 'pi pi-fw pi-align-left',
+                    },
+                    {
+                        label: 'Profile',
+                        icon: 'pi pi-fw pi-align-left',
+                    },
+                    {
+                        label: 'Party Accounts heads',
+                        icon: 'pi pi-fw pi-align-left',
+                    },
+                    {
+                        label: 'Others Accounts heads',
                         icon: 'pi pi-fw pi-align-left',
                     }
                 ]
@@ -596,6 +622,7 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: 'Products',
                         icon: 'pi pi-fw pi-th-large',
+                         routerLink: ['/products'],
                     }
                 ]
             },
@@ -606,19 +633,20 @@ export class AppMenuComponent implements OnInit {
                     {
                         label: 'Dashboard',
                         icon: 'pi pi-fw pi-chart-line',
+                        routerLink: ['/dashboard']
                     }
                 ]
             },
-            {
-                label: 'Automation',
-                icon: 'pi pi-fw pi-sliders-v',
-                items: [
-                    {
-                        label: 'Automation',
-                        icon: 'pi pi-fw pi-sliders-v',
-                    }
-                ]
-            }
+            // {
+            //     label: 'Automation',
+            //     icon: 'pi pi-fw pi-sliders-v',
+            //     items: [
+            //         {
+            //             label: 'Automation',
+            //             icon: 'pi pi-fw pi-sliders-v',
+            //         }
+            //     ]
+            // }
         ]
     }
 }
